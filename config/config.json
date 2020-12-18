@@ -1,0 +1,30 @@
+{
+  "development": {
+    "username": "lDffXxoYBa",
+    "password": "vhtnoaTWnz",
+    "database": "lDffXxoYBa",
+    "host": "remotemysql.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "lDffXxoYBa",
+    "password": "vhtnoaTWnz",
+    "database": "lDffXxoYBa",
+    "host": "remotemysql.com",
+    "dialect": "mysql"
+  },
+  "testcopy": {
+    "username": "root",
+    "password": "root",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
