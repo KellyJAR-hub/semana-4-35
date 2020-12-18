@@ -34,8 +34,13 @@ module.exports = {
     },
     queryCodigo: async(req, res, next) => {
         try {
-            const reg = await models.Articulo.findOne({ codigo: req.query.codigo })
-                .populate('categoria', { nombre: 1 });
+            const reg = await models.Articulo.findOne({
+                where: {codigo: req.query.codigo},
+                include: [{
+                    model: Categoria,
+                    as: 'categoria'
+                }]
+            });
             if (!reg) {
                 res.status(404).send({
                     message: 'El registro no existe'
